@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLibrary", "Test\ServiceLibrary.csproj", "{33304A02-E154-4C1B-9F09-D2A024C77434}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{D6747A31-10F4-46ED-8E7D-78481F93E3D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{1EE70306-59B7-46B2-ABF8-EF8A3C938F1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{B6B74896-6884-4BEE-B43F-6405664079F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppJobPortal", "AppJobPortal\AppJobPortal.csproj", "{E63F4324-3FAB-4F0D-8126-6B4B123A2742}"
+	ProjectSection(ProjectDependencies) = postProject
+		{33304A02-E154-4C1B-9F09-D2A024C77434} = {33304A02-E154-4C1B-9F09-D2A024C77434}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobPortal.Model", "JobPortal.Model\JobPortal.Model.csproj", "{54C02908-1940-4080-9B75-A3879245C02B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJobPortal", "MyWeb\WebJobPortal.csproj", "{210D4B66-BEF0-48ED-A289-B76BA2DC7A6A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{33304A02-E154-4C1B-9F09-D2A024C77434} = {33304A02-E154-4C1B-9F09-D2A024C77434}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33304A02-E154-4C1B-9F09-D2A024C77434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33304A02-E154-4C1B-9F09-D2A024C77434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33304A02-E154-4C1B-9F09-D2A024C77434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33304A02-E154-4C1B-9F09-D2A024C77434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6747A31-10F4-46ED-8E7D-78481F93E3D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6747A31-10F4-46ED-8E7D-78481F93E3D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6747A31-10F4-46ED-8E7D-78481F93E3D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6747A31-10F4-46ED-8E7D-78481F93E3D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EE70306-59B7-46B2-ABF8-EF8A3C938F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EE70306-59B7-46B2-ABF8-EF8A3C938F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EE70306-59B7-46B2-ABF8-EF8A3C938F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EE70306-59B7-46B2-ABF8-EF8A3C938F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6B74896-6884-4BEE-B43F-6405664079F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B74896-6884-4BEE-B43F-6405664079F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B74896-6884-4BEE-B43F-6405664079F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B74896-6884-4BEE-B43F-6405664079F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E63F4324-3FAB-4F0D-8126-6B4B123A2742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E63F4324-3FAB-4F0D-8126-6B4B123A2742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E63F4324-3FAB-4F0D-8126-6B4B123A2742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E63F4324-3FAB-4F0D-8126-6B4B123A2742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54C02908-1940-4080-9B75-A3879245C02B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C02908-1940-4080-9B75-A3879245C02B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54C02908-1940-4080-9B75-A3879245C02B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54C02908-1940-4080-9B75-A3879245C02B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{210D4B66-BEF0-48ED-A289-B76BA2DC7A6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{210D4B66-BEF0-48ED-A289-B76BA2DC7A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{210D4B66-BEF0-48ED-A289-B76BA2DC7A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{210D4B66-BEF0-48ED-A289-B76BA2DC7A6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Validation.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Validation.Integration.WCF.6.0.1304.0\lib\NET45
+		SolutionGuid = {9E3A0AA7-733B-497E-8D8A-432DEF2E26D9}
+	EndGlobalSection
+EndGlobal
